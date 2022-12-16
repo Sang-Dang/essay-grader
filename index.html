@@ -16,25 +16,48 @@
 <body>
     <header>
         <div class="container bg-light">
-
-                <div class="col-md-12">
-                    <h1 class="text-center">Basic Essay Grader</h1>
-                </div>
-
+            <div class="col-md-12">
+                <h1 class="text-center">Basic Essay Grader</h1>
+            </div>
             <ul class="nav nav-tabs justify-content-center">
-                <li class="nav-item mainnav"><a class="nav-link active" onclick="switchstate(this)">Task Achievement</a></li>
-                <li class="nav-item mainnav"><a class="nav-link" onclick="switchstate(this)">Grammar</a></li>
-                <li class="nav-item mainnav"><a class="nav-link" onclick="switchstate(this)">Vocabulary</a></li>
-                <li class="nav-item mainnav"><a class="nav-link" onclick="switchstate(this)">Coherence and Cohesion</a></li>
-                <li class="nav-item mainnav"><a class="nav-link" onclick="switchstate(this)">CEFR</a></li>
-                <li class="nav-item mainnav"><a class="nav-link" onclick="switchstate(this)">Comments</a></li>
+                <li class="nav-item mainnav"><a class="task-achievement nav-link active" onclick="switchstate(this)">Task Achievement</a>
+                </li>
+                <li class="nav-item mainnav"><a class="grammar nav-link" onclick="switchstate(this)">Grammar</a></li>
+                <li class="nav-item mainnav"><a class="vocabulary nav-link" onclick="switchstate(this)">Vocabulary</a></li>
+                <li class="nav-item mainnav"><a class="cnc nav-link" onclick="switchstate(this)">Coherence and Cohesion</a>
+                </li>
+                <li class="nav-item mainnav"><a class="cefr nav-link" onclick="switchstate(this)">CEFR</a></li>
+                <li class="nav-item mainnav"><a class="comments nav-link" onclick="switchstate(this)">Comments</a></li>
             </ul>
         </div>
-        
+
     </header>
     <main>
-        <div class="container">
-            
+        <div class="content task-achievement">
+            <div class="container">
+                <div class="col-md-12">
+                    <h3 class="text-center">General assessment</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="button" class="TA_1" data-toggle="false" onclick="clickRadioButton(this)">Excellent</button>
+                    <button type="button" class="TA_1" data-toggle="false" onclick="clickRadioButton(this)">Good</button>
+                    <button type="button" class="TA_1" data-toggle="false" onclick="clickRadioButton(this)">Bad</button>
+                    <button type="button" class="TA_1" data-toggle="false" onclick="clickRadioButton(this)">Awful</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <h3 class="text-center">Additional Problems</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="button" class="TA_3" data-toggle="false" onclick="clickCheckButton(this)">More examples</button>
+                    <button type="button" class="TA_3" data-toggle="false" onclick="clickCheckButton(this)">Off topic</button>
+                    <button type="button" class="TA_3" data-toggle="false" onclick="clickCheckButton(this)">Unspecific examples</button>
+                    <button type="button" class="TA_3" data-toggle="false" onclick="clickCheckButton(this)">Generalization</button>
+                    <button type="button" class="TA_3" data-toggle="false" onclick="clickCheckButton(this)">Sexist</button>
+                    <button type="button" class="TA_3" data-toggle="false" onclick="clickCheckButton(this)">Wrong format</button>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
